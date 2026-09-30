@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finance-video-engine"
+version = "0.1.0"
+description = "Production-quality MVP for finance YouTube content automation."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "langchain>=0.3.0",
+  "langgraph>=0.2.0",
+  "langchain-openai>=0.2.0",
+  "langchain-anthropic>=0.3.0",
+  "langchain-google-genai>=2.0.0",
+  "pydantic>=2.7.0",
+  "python-dotenv>=1.0.1",
+  "Pillow>=10.3.0",
+  "pytest>=8.0.0",
+  "requests>=2.31.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.setuptools]
+packages = ["app"]
