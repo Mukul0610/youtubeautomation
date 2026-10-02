@@ -12,3 +12,6 @@ htmlcov/
 projects/
 out/
 output/
+credentials/
+tokens/
+client_secret*.json
